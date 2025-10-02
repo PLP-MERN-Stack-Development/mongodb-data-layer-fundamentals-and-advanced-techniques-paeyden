@@ -4,7 +4,7 @@
 const { MongoClient } = require('mongodb');
 
 // Connection URI (replace with your MongoDB connection string if using Atlas)
-const uri = 'mongodb://localhost:27017';
+const uri = 'mongodb://localhost:27017/plp_bookstore';
 
 // Database and collection names
 const dbName = 'plp_bookstore';
@@ -131,6 +131,16 @@ const books = [
     in_stock: true,
     pages: 342,
     publisher: 'Thomas Cautley Newby'
+  },
+  {
+    title: "The Poppy War",
+    author: "R.F Kuang",
+    genre: "Fantasy",
+    published_year: 2018,
+    price: 12.99,
+    in_stock: true,
+    pages: 542,
+    publisher: "Haper Voyager (imprint of HaperCollins)"
   }
 ];
 
